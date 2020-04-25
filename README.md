@@ -1,1 +1,1 @@
-# etch-a-sketch
+Building a browser version of something between a sketchpad and an Etch-A-Sketch to practice DOM manipulation. From TheOdinProject: https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project?ref=lnav
