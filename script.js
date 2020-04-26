@@ -1,6 +1,9 @@
 const container = document.getElementById("container");
 const newGrid = document.getElementById("new-grid");
 const resetButton = document.getElementById("reset-button");
+const heading = document.querySelector('.header');
+let windowHeight = window.innerHeight;
+let headerHeight = heading.offsetHeight; 
 
 function makeGrid(rows, cols) {
     //make new grid
@@ -8,7 +11,6 @@ function makeGrid(rows, cols) {
     container.style.setProperty('--grid-cols', cols);
     for (c = 0; c < (rows * cols); c++) {
         let cell = document.createElement("div");
-        cell.innerHTML = c+1;
         cell.addEventListener("mouseover", function(e) {
             event.target.style.background = "black";
         });
@@ -17,10 +19,10 @@ function makeGrid(rows, cols) {
 };
 
 function clearGrid() {
-    
+    container.innerHTML = "";
 }
 
-makeGrid(16, 16);
+makeGrid(100, 100);
 
 newGrid.addEventListener("click", function(e) {
     let side = prompt("How many squares should be in the grid?");
