@@ -2,8 +2,6 @@ const container = document.getElementById("container");
 const newGrid = document.getElementById("new-grid");
 const resetButton = document.getElementById("reset-button");
 const heading = document.querySelector('.header');
-let windowHeight = window.innerHeight;
-let headerHeight = heading.offsetHeight; 
 
 function makeGrid(rows, cols) {
     //make new grid
