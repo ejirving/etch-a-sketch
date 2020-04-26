@@ -26,7 +26,9 @@ makeGrid(100, 100);
 
 newGrid.addEventListener("click", function(e) {
     let side = prompt("How many squares should be in the grid?");
-    if (side != null || side != '') {
+    if (side > 100 || side <= 0 || side === null || side === '') {
+        alert("Please enter a number between 1 and 100.");
+    } else {
         clearGrid();
         makeGrid(side, side);
     };
